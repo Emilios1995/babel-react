@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/facebook/react-native/tree/master/babel-preset/README.md",
   "dependencies": {
-    "babel-plugin-check-es2015-constants": "^6.5.0",
+   "babel-plugin-check-es2015-constants": "^6.5.0",
     "babel-plugin-react-transform": "2.0.2",
     "babel-plugin-syntax-async-functions": "^6.5.0",
     "babel-plugin-syntax-class-properties": "^6.5.0",
@@ -43,7 +43,7 @@
     "babel-plugin-transform-react-jsx-source": "^6.5.0",
     "babel-plugin-transform-react-jsx": "^6.5.0",
     "babel-plugin-transform-regenerator": "^6.5.0",
-    "babel-plugin-transform-remove-console": "^6.8.0",
     "react-transform-hmr": "^1.0.4"
+    "babel-plugin-transform-remove-console": "^6.5.0",
   }
 }
