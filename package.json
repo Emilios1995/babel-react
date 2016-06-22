@@ -44,6 +44,6 @@
     "babel-plugin-transform-react-jsx": "^6.5.0",
     "babel-plugin-transform-regenerator": "^6.5.0",
     "react-transform-hmr": "^1.0.4",
-    "babel-plugin-transform-remove-console": "^6.5.0",
+    "babel-plugin-transform-remove-console": "^6.5.0"
   }
 }
