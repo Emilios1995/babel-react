@@ -3,7 +3,7 @@
   "version": "1.9.0",
   "description": "Babel preset for React Native applications",
   "main": "index.js",
-  "repository": "https://github.com/facebook/react-native/tree/master/babel-preset",
+  "repository": "https://github.com/Emilios1995/babel-react.git",
   "keywords": [
     "babel",
     "preset",
