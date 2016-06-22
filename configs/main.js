@@ -46,7 +46,7 @@ module.exports = {
     },
     production: {
       plugins: resolvePlugins(['transform-remove-console']),
-    }
+    },
   },
   retainLines: true,
   sourceMaps: false,
