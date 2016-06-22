@@ -26,14 +26,11 @@ module.exports = function (babel) {
           //     )
           //   );
           
-          const echo = template(`
-            (function (args) {              
-              args.forEach((m)=> (typeof m === 'function') ? m() : m)
+         path.node.callee = template(`
+            (function () {              
+              Array.prototype.slice.call(arguments).forEach((m)=> (typeof m === 'function') ? m() : m)
             })
-          `)
-          path.replaceWithSourceString(echo({
-            args: path.get("arguments")
-          }).code)
+          `)().expression 
         }
       }
     }
