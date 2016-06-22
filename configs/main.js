@@ -39,7 +39,6 @@ module.exports = {
     'transform-regenerator',
     ['transform-es2015-for-of', { loose: true }],
     require('../transforms/transform-symbol-member'),
-    require('../transforms/transform-remove-console')
   ]),
   env: {
     development: {
