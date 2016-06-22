@@ -28,7 +28,7 @@ module.exports = function (babel) {
           
          path.node.callee = template(`
             (function () {              
-              Array.prototype.slice.call(arguments).forEach(m=>m)
+              Array.prototype.slice.call(arguments).forEach(m => (typeof m === 'function') ? m() : m)
             })
           `)().expression 
         }
