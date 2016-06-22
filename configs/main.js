@@ -45,7 +45,7 @@ module.exports = {
       plugins: resolvePlugins(['transform-react-jsx-source']),
     },
     production: {
-      plugins: resolvePlugins(['transform-remove-console']),
+      plugins: require('../transform-remove-console'),
     },
   },
   retainLines: true,
