@@ -1,14 +1,14 @@
-var noOps = function() { return null }
+
 module.exports = function (babel) {
   var t = babel.types;
   return {
     visitor: {
       CallExpression(path) {
         if (path.get("callee").matchesPattern("console", true)) {
-          path.node.callee = noOps;
+          // path.node.callee = noOps;
           path.replaceWith(
             t.callExpression(
-              t.functionDeclaration(
+              t.functionExpression(
                 t.identifier('noOps'),
                 [t.identifier('x')],
                 t.blockStatement(
@@ -17,6 +17,11 @@ module.exports = function (babel) {
                 ), path.get("arguments")
               )
             );
+          // path.node.callee = template(`
+          //   (function (target) {              
+          //     return target;
+          //   })
+          // `)
         }
       }
     }
